@@ -4,29 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Survey Form</title>
 </head>
 
 <body>
     <h1 id="title">Subscribe below</h1>
-    <p id="description">If you want to receive 10%off code leave your email in the box.</p>
+    <p id="description">If you want to receive a 10%off code fill all the boxes.</p> 
+    
     <form id="survey-form" type="text">
+        <label for="stores">Choose a store:</label>
+        <select name="stores" id="stores">
+            <option value="Zara">Zara</option>
+            <option value="H&M">H&M</option>
+            <option value="Pull&Bear">Pulll&Bear</option>
+        </select>
         <label id="name-label" for="name">Name:</label>
-            <input id="name" type="text" placeholder="Full name" required>
-       
+        <input id="name" type="text" placeholder="Full name" required>
+
         <label id="email-label" for="email">Email:</label>
-            <input id="email" type="email" placeholder="Email address" required>
-        
+        <input id="email" type="email" placeholder="Email address" required>
+
         <label id="number-label">Tlp number:</label>
-            <input id="number" type="tel" placeholder="Example: +357-45-658" pattern="[0-9]{3}[0-9]{2}[0-9]{3}"
-                required>
+        <input id="number" type="tel" placeholder="Example: +357-45-658" pattern="[0-9]{3}[0-9]{2}[0-9]{3}" required>
+
         
-       
-<label for="male">Male</label>
-     <input type="radio" id="male" name="gender" value="male">
-     <label for="female">Female</label>
-     <input type="radio" id="female" name="gender" value="female">
-     <button type="submit">Submit</button>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+     
+       <label for="checkbox1">Dance</label>
+       <input type="checkbox" id="dance" value="dance">
+       <label for="checkbox1">Sing</label>
+       <input type="checkbox" id="sing" value="sing">
+       <label for="checkbox1">Swing</label>
+       <input type="checkbox" id="swing" value="swing">
+       <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Leave your comments here."></textarea>
+    
+        <button id="submit" type="submit">Submit</button>
     </form>
 </body>
 
