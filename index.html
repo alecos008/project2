@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Subscribe below</h1>
+    <p id="description">If you want to receive 10%off code leave your email in the box.</p>
+    <form id="survey-form" type="text">
+        <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Full name" required>
+       
+        <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Email address" required>
+        
+        <label id="number-label">Tlp number:</label>
+            <input id="number" type="tel" placeholder="Example: +357-45-658" pattern="[0-9]{3}[0-9]{2}[0-9]{3}"
+                required>
+        
+       
+<label for="male">Male</label>
+     <input type="radio" id="male" name="gender" value="male">
+     <label for="female">Female</label>
+     <input type="radio" id="female" name="gender" value="female">
+     <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
